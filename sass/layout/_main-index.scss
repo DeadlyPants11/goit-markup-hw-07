@@ -207,6 +207,11 @@ section {
   &:focus {
     background-color: var(--color-logo);
   }
+
+  &:hover .social-list-icon,
+  &:focus .social-list-icon {
+    fill: var(--color-text1);
+  }
 }
 
 .social-list-icon {
@@ -214,11 +219,6 @@ section {
   height: 20px;
   fill: var(--color-client);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--color-text1);
 }
 
 .icon-client {
@@ -242,6 +242,11 @@ section {
   &:focus {
     border: 1px solid var(--color-logo);
   }
+
+  &:hover .icon-client-icon,
+  &:focus .icon-client-icon {
+    fill: var(--color-logo);
+  }
 }
 
 .icon-client-icon {
@@ -249,9 +254,4 @@ section {
   height: 60px;
   fill: var(--color-client);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-client-item:hover .icon-client-icon,
-.icon-client-item:focus .icon-client-icon {
-  fill: var(--color-logo);
 }
